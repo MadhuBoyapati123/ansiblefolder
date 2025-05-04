@@ -1,0 +1,7 @@
+- name: Variable form inventory
+  hosts: localhost
+  tasks:
+    - name: print mongodb username
+      ansible.builtin.debug:
+      msg: "mongodb username is: {{ MONGODB_USERNAME }}"
+  
