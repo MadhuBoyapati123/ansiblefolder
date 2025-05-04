@@ -1,3 +1,4 @@
+
 - name: variable form prompt
   hosts: localhost
   vars_prompt:
@@ -5,9 +6,10 @@
       prompt: "Please Enter your USERNAME"
       private: false
     - name: password
-      prompt: Please Enter Your PASSWORD
+      prompt: "Please Enter Your PASSWORD"
       private: true
-      tasks:
-      - name: printing in prompt
-        ansible.builtin.debug:
-        msg: "username is: {{ USERNAME }} password is: {{ password}}"
+
+  tasks:
+    - name: printing in prompt
+      ansible.builtin.debug:
+        msg: "username is: {{ USERNAME }} password is: {{ password }}"
