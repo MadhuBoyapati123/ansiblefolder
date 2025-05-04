@@ -1,5 +1,5 @@
 - name: Variable form inventory
-  hosts: localhost
+  hosts: mongodb
   tasks:
     - name: print mongodb username
       ansible.builtin.debug:
