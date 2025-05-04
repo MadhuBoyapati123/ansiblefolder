@@ -1,0 +1,9 @@
+- name: Variables using file
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+  tasks:
+  - name: print variable files
+    ansible.built.in.debug:
+      msg: " WE are Learning {{ NAME }} and the trainer is {{TRAINER}} and the duration is {{DURATION}}"
+      
