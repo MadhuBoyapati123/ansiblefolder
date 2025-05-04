@@ -4,10 +4,10 @@
     money: "1 Lakh Rupees"
     land: "10 Acres"
   tasks:
-   - name: inhert values form play
-    ansible.builtin.debug:
-    msg: "MONEY is {{ money }} and Land is {{ land }}"
-  - name: inhert values form play and add values
+    - name: inhert values form play
+      ansible.builtin.debug:
+      msg: "MONEY is {{ money }} and Land is {{ land }}"
+    - name: inhert values form play and add values
   vars:
     money: "5 Lakh Rupees"
     land: "2 Acres"
