@@ -1,16 +1,17 @@
 - name: Variable at atsk level
   hosts: localhost
   vars:
-  - money: "1 Lakh Rupees"
+    money: "1 Lakh Rupees"
     land: "10 Acres"
   tasks:
-  - name: inhert values form play
+   - name: inhert values form play
     ansible.builtin.debug:
     msg: "MONEY is {{ money }} and Land is {{ land }}"
   - name: inhert values form play and add values
   vars:
-  - money: "5 Lakh Rupees"
+    money: "5 Lakh Rupees"
     land: "2 Acres"
     houses: "2 houses"
     ansible.builtin.debug:
     msg: "MONEY is {{ money }} and Land is {{ land }} and houses are {{ houses }}"
+
