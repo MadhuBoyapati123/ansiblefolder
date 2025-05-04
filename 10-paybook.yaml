@@ -1,0 +1,33 @@
+- name: ansible variable datatypes
+  hosts: localhost
+  vars:
+    - name: Madhu
+    - age: 25
+    - is devops: true
+    - skills:
+        - devops
+        - aws
+        - Docker
+
+    - Experience:
+        - devops: 2
+        - aws: 1
+        - Docker: 5
+
+  tasks: 
+   - name: print variable number
+     ansible.builtin.debug:
+      msg: "{{ age }}"
+   - name: print string variable
+     ansible.builtin.debug:
+        msg: "{{ name }}"
+   - name: print boolean variable
+      ansible.builtin.debug:
+        msg: "{{ is devops }}"
+   - name: print list variables
+      ansible.builtin.debug:
+        msg: "{{ skills }}"
+
+   - name: print map variables
+     ansible.builtin.debug:
+        msg: "{{ Experience }}"
