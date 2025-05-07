@@ -1,14 +1,14 @@
 - name: ansible variable datatypes
   hosts: localhost
   vars:
-    name: Madhu
-    age: 25
-    isdevops: true
-    skills:
+    name: Madhu # string
+    age: 25 # integer
+    isdevops: true # boolean
+    skills: # list
       - devops
       - aws
       - Docker
-    Experience:
+    Experience: # map
       devops: 2
       aws: 1
       Docker: 5
