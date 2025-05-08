@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     name: Madhu # string
-    age: 25 # integer
+    age: 25 # integer number
     isdevops: true # boolean
     skills: # list
       - devops

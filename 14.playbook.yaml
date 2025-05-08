@@ -9,6 +9,3 @@
       loop:
         - nginx
         - postfix
-      
-  
-
