@@ -1,0 +1,11 @@
+- name: loops examples
+  hosts: localhost
+  tasks:
+    - name: print names
+      ansible.builtin.debug:
+        msg: "{{ item }}"
+      loop:
+        - Madhu
+        - mahesh
+        - Ramesh
+        - Chinna
